@@ -11,7 +11,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true })) 
 
-app.listen(port, ()=> console.log(`Server Started On Port : ${port}`))
+app.listen(port, ()=> console.log(`Server Started On : http://localhost:${port}`))
 
 const dropDatabaseSync = false
 sequelizes.sync({ force: dropDatabaseSync }).then(() => {
