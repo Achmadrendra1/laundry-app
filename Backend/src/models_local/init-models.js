@@ -4,23 +4,19 @@ const sequelizes = new Sequelize(
   process.env.DATABASE,
   process.env.DATABASE_USER,
   process.env.DATABASE_PASSWORD,
+  // process.env.DATABASE_HOST,
   {
     dialect: "mysql",
-    host: process.env.DATABASE_HOST,
-    port: process.env.DATABASE_PORT,
     pool: {
       max: 5,
       min: 0,
       acquire: 30000,
       idle: 10000
     },
-    logging: false,
-    dialectOptions: {
-      connectTimeout: 60000 // timeout dalam milidetik (ms)
-    }
-
+    logging: false
   }
 )
+
 
 var DataTypes = require("sequelize").DataTypes;
 var _bill = require("./bill");
