@@ -39,7 +39,7 @@ const CreateNewUser = async(req, res) => {
         })
         res.status(201).send('User Berhasil Dibuat')
     } catch (error) {
-        res.status(400).send(error.message)
+        res.status(400).send('Username Sudah Ada' + error.message)
     }
 }
 
