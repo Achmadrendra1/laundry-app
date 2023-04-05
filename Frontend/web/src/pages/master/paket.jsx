@@ -1,5 +1,5 @@
 import React from 'react'
-import Dashboard from '../components/layouts'
+import Dashboard from '../../components/layouts'
 
 const Paket = () => {
   return (

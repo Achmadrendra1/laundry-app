@@ -1,10 +1,28 @@
 import React, { useState } from 'react'
-import Dashboard from '../components/layouts'
-import { Button, Tag, Space, Table, Input, Form, Select } from 'antd'
-import { FaEye, FaTrash } from 'react-icons/fa'
-import Modals from '../components/modals'
+import Dashboard from '../../components/layouts'
+import { Modal, Button, Tag, Space, Table, Input, Form, Select, Popconfirm } from 'antd'
+import { FaEye, FaTrash, FaRegQuestionCircle } from 'react-icons/fa'
+import Modals from '../../components/modals'
+import { ExclamationCircleFilled } from '@ant-design/icons';
 
 const Users = () => {
+    const { confirm } = Modal;
+    const showDeleteConfirm = () => {
+        confirm({
+            title: 'Are you sure delete this user?',
+            icon: <ExclamationCircleFilled />,
+            // content: 'Some descriptions',
+            okText: 'Yes',
+            okType: 'danger',
+            cancelText: 'No',
+            onOk() {
+                console.log('OK');
+            },
+            onCancel() {
+                console.log('Cancel');
+            },
+        });
+    };
     const columns = [
         {
             title: 'No',
@@ -35,7 +53,7 @@ const Users = () => {
             render: (_, record) => (
                 <Space size="middle">
                     <FaEye className='cursor-pointer text-blue-600' />
-                    <FaTrash className='cursor-pointer text-red-600' />
+                    <FaTrash className='cursor-pointer text-red-600' onClick={showDeleteConfirm} />
                 </Space>
             ),
         },

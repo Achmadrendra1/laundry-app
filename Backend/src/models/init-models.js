@@ -16,7 +16,7 @@ const sequelizes = new Sequelize(
     },
     logging: false,
     dialectOptions: {
-      connectTimeout: 60000 // timeout dalam milidetik (ms)
+      connectTimeout: 60000
     }
 
   }

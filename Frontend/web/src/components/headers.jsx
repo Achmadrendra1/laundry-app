@@ -3,6 +3,7 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import { CgProfile } from 'react-icons/cg'
 import { Avatar, Button, Space, Dropdown } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
+import { Link } from 'react-router-dom';
 
 const Headers = ({ click }) => {
     const change = () => {
@@ -11,7 +12,7 @@ const Headers = ({ click }) => {
 
     const items = [
         {
-            label: <a href="https://www.antgroup.com">Profile</a>,
+            label: <Link to="/profile">Profile</Link>,
             key: '0',
         },
         {
