@@ -77,9 +77,9 @@ const Dashboard = ({ children }) => {
                     <Content className='py-4 px-8' style={{ minHeight: '85vh'}}>
                         {children}
                     </Content>
-                    <div className='pt-2 text-center'>
-                        Copyright by Ren-Project 2023
-                    </div>
+                    <p className='text-sm font-semibold mt-auto mb-4 text-center'>
+                         &copy; Copyright by Ren-Project 2023
+                    </p>
                 </Content>
             </Layout>
         </>
