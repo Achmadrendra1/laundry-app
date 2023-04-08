@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Dashboard from '../../components/layouts'
-import { Modal, Button, Tag, Space, Table, Input, Form, Select, Popconfirm } from 'antd'
-import { FaEye, FaTrash, FaRegQuestionCircle } from 'react-icons/fa'
+import { Modal, Button, Space, Table, Input, Form, Select } from 'antd'
+import { FaEye, FaTrash } from 'react-icons/fa'
 import Modals from '../../components/modals'
 import { ExclamationCircleFilled } from '@ant-design/icons';
 

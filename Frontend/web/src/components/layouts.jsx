@@ -46,11 +46,6 @@ const Dashboard = ({ children }) => {
                     href: '/users'
                 },
                 {
-                    name: 'Paket',
-                    icon: <MdPriceChange />,
-                    href: '/paket'
-                },
-                {
                     name: 'Jenis Barang',
                     icon: <GiClothes />,
                     href: '/jenisbarang'

@@ -3,7 +3,6 @@ import React from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import Home from "../pages/home";
 import Users from "../pages/master/users";
-import Paket from "../pages/master/paket";
 import Barang from "../pages/master/barang";
 import Layanan from "../pages/master/layanan";
 import Bayar from "../pages/master/bayar";
@@ -28,7 +27,6 @@ export default function IndexRoutes() {
 
 
                     <Route path="/users" element={<Users />} />
-                    <Route path="/paket" element={<Paket />} />
                     <Route path="/jenisbarang" element={<Barang />} />
                     <Route path="/layanan" element={<Layanan />} />
                     <Route path="/jenisbayar" element={<Bayar />} />

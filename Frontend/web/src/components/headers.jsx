@@ -1,7 +1,6 @@
 import React from 'react'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import { CgProfile } from 'react-icons/cg'
-import { Avatar, Button, Space, Dropdown } from 'antd';
+import { Avatar, Space, Dropdown } from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 
