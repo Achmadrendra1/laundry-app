@@ -1,107 +1,105 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Dashboard from '../components/layouts'
-import { Col, Row, Tag, Button, Input, Select, Form, DatePicker, Table, Card, Image, Space, InputNumber } from 'antd'
-import { IoAddCircleOutline } from 'react-icons/io5'
-import dayjs from 'dayjs'
+import { Col, Row, Tag, Input, Select } from 'antd'
 import 'dayjs/locale/id';
-import { PlusCircleFilled, PlusOutlined } from '@ant-design/icons'
+import { PlusCircleFilled } from '@ant-design/icons'
 
 const Kasir = () => {
-  const { Search, TextArea } = Input;
-  const { RangePicker } = DatePicker;
+  // const { Search, TextArea } = Input;
+  // const { RangePicker } = DatePicker;
 
-  const today = dayjs().locale('id').format('YYYY-MM-DD');
+  // const today = dayjs().locale('id').format('YYYY-MM-DD');
 
-  const onFinish = (data) => {
-    console.log("Success:", data);
-    // dispatch(doAddUsers(data));
-    // setShow(false)
-  };
+  // const onFinish = (data) => {
+  //   console.log("Success:", data);
+  //   // dispatch(doAddUsers(data));
+  //   // setShow(false)
+  // };
 
-  const onChange = (value) => {
-    console.log(`selected ${value}`);
-  };
-  const onSearch = (value) => {
-    console.log('search:', value);
-  };
+  // const onChange = (value) => {
+  //   console.log(`selected ${value}`);
+  // };
+  // const onSearch = (value) => {
+  //   console.log('search:', value);
+  // };
 
-  const layanan = [
-    {
-      value: 'Cuci Kiloan',
-      label: 'Cuci Kiloan',
-    },
-    {
-      value: 'Setrika',
-      label: 'Setrika',
-    },
-    {
-      value: 'Cuci Satuan',
-      label: 'Cuci Satuan',
-    },
-  ]
+  // const layanan = [
+  //   {
+  //     value: 'Cuci Kiloan',
+  //     label: 'Cuci Kiloan',
+  //   },
+  //   {
+  //     value: 'Setrika',
+  //     label: 'Setrika',
+  //   },
+  //   {
+  //     value: 'Cuci Satuan',
+  //     label: 'Cuci Satuan',
+  //   },
+  // ]
 
-  const paket = [
-    {
-      value: 'Reguler',
-      label: 'Reguler',
-    },
-    {
-      value: 'Express',
-      label: 'Express',
-    },
-  ]
+  // const paket = [
+  //   {
+  //     value: 'Reguler',
+  //     label: 'Reguler',
+  //   },
+  //   {
+  //     value: 'Express',
+  //     label: 'Express',
+  //   },
+  // ]
 
-  const columns = [
-    {
-      title: 'Layanan',
-      dataIndex: 'layanan',
-      key: 'layanan',
-    },
-    {
-      title: 'Jenis',
-      dataIndex: 'jenis',
-      key: 'jenis',
-    },
-    {
-      title: 'Estimasi',
-      dataIndex: 'estimasi',
-      key: 'estimasi',
-    },
-    {
-      title: 'Tarif',
-      dataIndex: 'tarif',
-      key: 'tarif',
-    },
-  ]
+  // const columns = [
+  //   {
+  //     title: 'Layanan',
+  //     dataIndex: 'layanan',
+  //     key: 'layanan',
+  //   },
+  //   {
+  //     title: 'Jenis',
+  //     dataIndex: 'jenis',
+  //     key: 'jenis',
+  //   },
+  //   {
+  //     title: 'Estimasi',
+  //     dataIndex: 'estimasi',
+  //     key: 'estimasi',
+  //   },
+  //   {
+  //     title: 'Tarif',
+  //     dataIndex: 'tarif',
+  //     key: 'tarif',
+  //   },
+  // ]
 
-  const data = [
-    {
-      key: '1',
-      layanan: 'Cuci Kiloan',
-      jenis: 'Reguler',
-      estimasi: '3 Hari',
-      tarif: 'Rp. 7.000',
-    },
-  ]
+  // const data = [
+  //   {
+  //     key: '1',
+  //     layanan: 'Cuci Kiloan',
+  //     jenis: 'Reguler',
+  //     estimasi: '3 Hari',
+  //     tarif: 'Rp. 7.000',
+  //   },
+  // ]
 
-  const onChangeDate = (date) => {
-    console.log(date.format('YYYY-MM-DD'))
-  }
+  // const onChangeDate = (date) => {
+  //   console.log(date.format('YYYY-MM-DD'))
+  // }
 
-  const dataLayanan = [
-    {
-      "Nama_Layanan": "Cuci Kiloan",
-      "img": "/images/cuci.png"
-    },
-    {
-      "Nama_Layanan": "Cuci Satuan",
-      "img": "/images/satuan.png"
-    },
-    {
-      "Nama_Layanan": "Setrika",
-      "img": "/images/setrika.png"
-    }
-  ]
+  // const dataLayanan = [
+  //   {
+  //     "Nama_Layanan": "Cuci Kiloan",
+  //     "img": "/images/cuci.png"
+  //   },
+  //   {
+  //     "Nama_Layanan": "Cuci Satuan",
+  //     "img": "/images/satuan.png"
+  //   },
+  //   {
+  //     "Nama_Layanan": "Setrika",
+  //     "img": "/images/setrika.png"
+  //   }
+  // ]
 
   return (
     <Dashboard>
